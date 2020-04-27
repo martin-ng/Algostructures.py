@@ -22,7 +22,7 @@ class Solution:
                 heapq.heappush(res, num)
         return res[0]
 
-    # quickselect
+    # quickselect, based on Tony Hoare's quick sort partition method
     # O(n) time average case, O(n^2) worst case, O(1) space
     def quickselect(self, arr, k):
         lo = 0
