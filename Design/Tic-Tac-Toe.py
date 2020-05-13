@@ -1,5 +1,4 @@
 
-
 class TicTacToe:
     def __init__(self, n):
         self.board = [[None] * n for i in range(n)]
@@ -21,21 +20,25 @@ class TicTacToe:
         for i in range(len(self.board)):
             if self.board[i][col] != player:
                 return False
+        return True
 
     def checkRow(self, row, player):
         for i in range(len(self.board)):
             if self.board[row][i] != player:
                 return False
+        return True
 
     def checkLeftDiag(self, player):
         for i in range(len(self.board)):
             if self.board[i][i] != player:
                 return False
+        return True
 
     def checkRightDiag(self, player):
         for i in range(len(self.board)):
             if self.board[i][len(self.board)-i-1] != player:
                 return False
+        return True
 
 
 new_solution = TicTacToe(3)

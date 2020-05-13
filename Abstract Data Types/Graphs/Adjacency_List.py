@@ -25,6 +25,8 @@ class Graph:
             self.adjacency_list[v].append(u)
         self.adjacency_list[u].append(v)
 
+    def traversal(self, node):
+        
 
 if __name__ == '__main__':
     nodes = ['A', 'B', 'C', 'D', 'E']
