@@ -5,6 +5,9 @@ class Solution:
 
     # It is important to note that this problem does not ask for the values to be sorted
     # according to value. Order is based on the ordering from left to right respective to the row
+    # This solution utilizes BFS traversal
+    # Time complexity: O(n) as you are not sorting but using two variables to keep track of the rows
+    # Space complexity: O(n) number of nodes in the tree
     def verticalOrder(self, root):
         if not root:
             return []
