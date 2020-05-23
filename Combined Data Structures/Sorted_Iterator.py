@@ -14,11 +14,11 @@ class Solution:
             for i in range(len(list1)):
                 heapq.heappush(self.heap, list1[i])
         if list2:
-            list2.sort(reverse=True)
+            list2.sort()
             for i in range(len(list2)):
                 heapq.heappush(self.heap, list2[i])
         if list3:
-            list3.sort(reverse=True)
+            list3.sort()
             for i in range(len(list2)):
                 heapq.heappush(self.heap, list3[i])
 
